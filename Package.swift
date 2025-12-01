@@ -32,7 +32,7 @@ let package = Package(
         .library(name: .bcp47, targets: [.bcp47])
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-standards/swift-standards", from: "0.1.0"),
+        .package(url: "https://github.com/swift-standards/swift-standards", from: "0.8.0"),
         .package(url: "https://github.com/swift-standards/swift-rfc-5646", from: "0.1.0")
     ],
     targets: [
