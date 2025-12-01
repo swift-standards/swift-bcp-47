@@ -29,9 +29,9 @@ import Standards
 /// let serbianLatin = try BCP47.LanguageTag("sr-Latn-RS")
 /// ```
 public enum BCP47 {
-    /// Language tag per RFC 5646 (re-exported)
-    public typealias LanguageTag = RFC_5646.LanguageTag
+  /// Language tag per RFC 5646 (re-exported)
+  public typealias LanguageTag = RFC_5646.LanguageTag
 
-    /// Errors that can occur when parsing or validating language tags (re-exported)
-    public typealias Error = RFC_5646.Error
+  /// Errors that can occur when parsing or validating language tags (re-exported)
+  public typealias Error = RFC_5646.Error
 }
