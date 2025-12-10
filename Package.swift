@@ -33,7 +33,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/swift-standards/swift-standards", from: "0.10.0"),
-        .package(url: "https://github.com/swift-standards/swift-rfc-5646", from: "0.2.2")
+        .package(url: "https://github.com/swift-standards/swift-rfc-5646", from: "0.2.3")
     ],
     targets: [
         .target(
