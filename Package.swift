@@ -14,8 +14,8 @@ extension String {
 
 extension PackageDescription.Target.Dependency {
     static let rfc5646: Self = .product(name: "RFC 5646", package: "swift-rfc-5646")
-    static let standards: Self = .product(name: "Standards", package: "swift-standards")
-    static let standardsTestSupport: Self = .product(name: "StandardsTestSupport", package: "swift-standards")
+    static let standards: Self = .product(name: "Standard Library Extensions", package: "swift-standard-library-extensions")
+    static let standardsTestSupport: Self = .product(name: "Test Primitives", package: "swift-test-primitives")
 
     static let bcp47: Self = .target(name: .bcp47)
 }
@@ -32,8 +32,9 @@ let package = Package(
         .library(name: .bcp47, targets: [.bcp47])
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-standards/swift-standards", from: "0.10.0"),
-        .package(url: "https://github.com/swift-standards/swift-rfc-5646", from: "0.2.3")
+        .package(path: "../../swift-primitives/swift-standard-library-extensions"),
+        .package(path: "../../swift-primitives/swift-test-primitives"),
+        .package(path: "../swift-rfc-5646")
     ],
     targets: [
         .target(
