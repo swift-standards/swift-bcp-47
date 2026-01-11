@@ -4,7 +4,7 @@
 // Best Current Practice 47: Tags for Identifying Languages
 
 @_exported import RFC_5646
-import Standards
+import Standard_Library_Extensions
 
 /// BCP 47: Best Current Practice for Tags for Identifying Languages
 ///
