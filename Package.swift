@@ -32,9 +32,9 @@ let package = Package(
         .library(name: .bcp47, targets: [.bcp47])
     ],
     dependencies: [
-        .package(path: "../../swift-primitives/swift-standard-library-extensions"),
-        .package(path: "../../swift-primitives/swift-test-primitives"),
-        .package(path: "../swift-rfc-5646")
+        .package(url: "https://github.com/swift-primitives/swift-standard-library-extensions.git", from: "0.0.1"),
+        .package(url: "https://github.com/swift-primitives/swift-test-primitives.git", from: "0.0.1"),
+        .package(url: "https://github.com/swift-standards/swift-rfc-5646.git", from: "0.0.1")
     ],
     targets: [
         .target(
