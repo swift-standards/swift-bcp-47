@@ -29,26 +29,18 @@ let package = Package(
         .watchOS(.v26)
     ],
     products: [
-        .library(name: .bcp47, targets: [.bcp47])
+        .library(name: "BCP 47", targets: ["BCP 47"])
     ],
     dependencies: [
         .package(path: "../../swift-primitives/swift-standard-library-extensions"),
-        .package(path: "../../swift-primitives/swift-test-primitives"),
         .package(path: "../swift-rfc-5646")
     ],
     targets: [
         .target(
-            name: .bcp47,
+            name: "BCP 47",
             dependencies: [
                 .standards,
                 .rfc5646
-            ]
-        ),
-        .testTarget(
-            name: .bcp47Tests,
-            dependencies: [
-                .bcp47,
-                .standardsTestSupport
             ]
         )
     ],
